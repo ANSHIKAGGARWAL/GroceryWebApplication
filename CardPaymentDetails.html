@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" 
+          content="width=device-width,initial-scale=1.0" />
+    <link rel="stylesheet" href="styleCardDetails.css" class="css" />
+	
+	  <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+	 <!-- custom Tailwind css file link  -->
+   <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body>
+ <!--header section starts -->  
+<header class ="header min-h-screen bg-[url('images/bg_img.jpg')] bg-center bg-cover px-28 py-5">
+	
+    <div class="container">
+        <div class="main-content"></div>
+
+        <div class="centre-content">
+            <h1 class="price">GROCERY MART </h1>
+            <p class="course">
+                ENTER YOUR CREDIT/DEBIT CARD DETAILS
+            </p>
+        </div>
+
+        <div class="card-details">
+			<br>
+            <div class="card-number">
+                <label> Card Number </label>
+                <input type="text" 
+                       class="card-number-field" 
+                       placeholder="###-###-###" />
+            </div>
+            <br>
+			
+            <div class="date-number">
+                <label> Expiry Date </label>
+                <input type="text" 
+                       class="date-number-field" 
+                       placeholder="DD-MM-YY" />
+            </div>
+			<br>
+			
+            <div class="cvv-number">
+                <label> CVV number </label>
+                <input type="text" 
+                       class="cvv-number-field" 
+                       placeholder="xxx" />
+            </div>
+			<br>
+			
+            <div class="nameholder-number">
+                <label> Card Holder name </label>
+                <input type="text" 
+                       class="card-name-field" 
+                       placeholder="Enter your Name" />
+            </div>
+			<br>
+            <button type="submit" class="submit-now-btn">
+                SUBMIT AND PAY
+            </button>
+        </div>
+    </div>
+</body>
+
+</html>

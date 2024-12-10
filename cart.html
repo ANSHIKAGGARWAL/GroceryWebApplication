@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>shopping cart</title>
+
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="css/footerStyle.css">
+   
+   <!-- custom Tailwind css file link  -->
+   <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body>
+ <!--header section starts -->  
+<header class ="header min-h-screen bg-[url('images/bg_img.jpg')] bg-center bg-cover px-28 py-5">
+
+	<nav class = "flex items-center">
+		<a href="home.html" class="logo"><i class="fa-solid fa-basket-shopping fa-bounce" style="color: #FFD43B;"></i> GROCERY MART </a>
+		
+			<a href="home.html" class="no-underline text-white">HOME</a>
+			<a href="shop.html" class="no-underline text-white">SHOP</a>
+			<a href="about.html" class="no-underline text-white">ABOUT US</a>
+			<a href="blog.html" class="no-underline text-white">BLOG</a>
+			<a href="contact.html" class="no-underline text-white">CONNECT WITH US</a>
+		
+		<div class="icons">
+			<!--<div id ="menu-btn" class="fas fa-bars"></div> -->
+			<a href="home.html" class="logo"><div id ="search-btn" class="fas fa-search" ></div></a>
+			<a href="cart.html" class="logo"><div id ="cart-btn" class="fa-solid fa-cart-shopping fa-beat"></div></a>
+			<a href="login.html" class="logo"><div id ="login-btn" class="fas fa-user"></div></a>
+		</div>
+	</nav>
+
+<section class="shopping-cart">
+
+   <h1 class="title">products added</h1>
+
+   <div class="box-container">
+
+   <form action="" method="POST" class="box">
+      <a href="cart.html>" class="fas fa-times" onclick="return confirm('delete this from cart?');"></a>
+      <a href="view_page.html>" class="fas fa-eye"></a>
+      <img src="uploaded_img/<?= $fetch_cart['image']; ?>" alt="">
+      <div class="name"><?= $fetch_cart['name']; ?></div>
+      <div class="price">$<?= $fetch_cart['price']; ?>/-</div>
+      <input type="hidden" name="cart_id" value="<?= $fetch_cart['id']; ?>">
+      <div class="flex-btn">
+         <input type="number" min="1" value="<?= $fetch_cart['quantity']; ?>" class="qty" name="p_qty">
+         <input type="submit" value="update" name="update_qty" class="option-btn">
+      </div>
+      <div class="sub-total"> sub total : </div>
+   </form>
+   
+   </div>
+
+   <div class="cart-total">
+      <p>grand total :</p>
+      <a href="home.html" class="option-btn">continue shopping</a>
+      <a href="cart.html" class="delete-btn">delete all</a>
+      <a href="paymentGateway.html" class="btn"> PROCEED TO CHECKOUT </a>
+   </div>
+
+</section>
+
+<footer>
+    <div class="footerContainer">
+        <div class="socialIcons">
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+            <a href=""><i class="fa-brands fa-google-plus"></i></a>
+            <a href=""><i class="fa-brands fa-youtube"></i></a>
+        </div>
+        <div class="footerNav">
+            <ul><li><a href="home.html">Home</a></li>
+                <li><a href="">News</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="">our Team</a></li>
+            </ul>
+        </div>
+        
+    </div>
+    <div class="footerBottom">
+        <p>Copyright @2024; Designed by ANSHIKA AGGARWAL </p>
+    </div>
+</footer>
+
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
