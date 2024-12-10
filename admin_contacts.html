@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>messages</title>
+
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="css/admin_style.css"><!-- custom Tailwind css file link  -->
+   <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body>
+ <!--header section starts -->  
+<header class ="header min-h-screen bg-[url('images/bg_img.jpg')] bg-center bg-cover px-28 py-5">
+	
+	<nav class = "flex items-center">
+	<a href="home.html" class="no-underline text-white"><i class="fa-solid fa-basket-shopping fa-bounce" style="color: #FFD43B;"></i> GROCERY MART </a>
+	
+		<a href="home.html" class="no-underline text-white">HOME</a>
+		<a href="shop.html" class="no-underline text-white">SHOP</a>
+		<a href="about.html" class="no-underline text-white">ABOUT US</a>
+		<a href="blog.html" class="no-underline text-white">BLOG</a>
+		<a href="contact.html" class="no-underline text-white">CONNECT WITH US</a>
+	
+	<div class="icons">
+		<!--<div id ="menu-btn" class="fas fa-bars"></div> -->
+		<a href="search_page.html" class="logo"><div id ="search-btn" class="fas fa-search" ></div></a>
+		<a href="cart.html" class="logo"><div id ="cart-btn" class="fa-solid fa-cart-shopping fa-beat"></div></a>
+		<a href="login.html" class="logo"><div id ="login-btn" class="fas fa-user"></div></a>
+	</div>
+	</nav>
+   
+<header class="admin_header.html">
+
+<section class="messages">
+
+   <h1 class="title">messages</h1>
+
+   <div class="box-container">
+
+   <div class="box">
+      <p> user id : <span><?= $fetch_message['user_id']; ?></span> </p>
+      <p> name : <span><?= $fetch_message['name']; ?></span> </p>
+      <p> number : <span><?= $fetch_message['number']; ?></span> </p>
+      <p> email : <span><?= $fetch_message['email']; ?></span> </p>
+      <p> message : <span><?= $fetch_message['message']; ?></span> </p>
+      <a href="admin_contacts.html>" onclick="return confirm('delete this message?');" class="delete-btn">delete</a>
+   </div>
+
+   </div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="js/script.js"></script>
+
+</body>
+</html>

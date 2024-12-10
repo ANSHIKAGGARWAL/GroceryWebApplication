@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>contact</title>
+
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="css/footerStyle.css">
+   
+   <!-- custom Tailwind css file link  -->
+   <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body>
+ <!--header section starts -->  
+<header class ="header min-h-screen bg-[url('images/bg_img.jpg')] bg-center bg-cover px-28 py-5">
+	
+	<nav class = "flex items-center">
+	<a href="home.html" class="logo"><i class="fa-solid fa-basket-shopping fa-bounce" style="color: #FFD43B;"></i> GROCERY MART </a>
+	
+		<a href="home.html" class="no-underline text-white">HOME</a>
+		<a href="shop.html" class="no-underline text-white">SHOP</a>
+		<a href="about.html" class="no-underline text-white">ABOUT US</a>
+		<a href="blog.html" class="no-underline text-white">BLOG</a>
+		<a href="contact.html" class="no-underline text-white">CONTACT</a>
+	
+	<div class="icons">
+		<!--<div id ="menu-btn" class="fas fa-bars"></div> -->
+		<a href="home.html" class="logo"><div id ="search-btn" class="fas fa-search" ></div></a>
+		<a href="cart.html" class="logo"><div id ="cart-btn" class="fa-solid fa-cart-shopping fa-beat"></div></a>
+		<a href="login.html" class="logo"><div id ="login-btn" class="fas fa-user"></div></a>
+	</div>
+	</nav>
+	
+<section class="contact">
+
+   <h1 class="title">get in touch</h1>
+
+   <form action="" method="POST">
+      <input type="text" name="name" class="box" required placeholder="enter your name">
+      <input type="email" name="email" class="box" required placeholder="enter your email">
+      <input type="number" name="number" min="0" class="box" required placeholder="enter your number">
+      <textarea name="msg" class="box" required placeholder="enter your message" cols="30" rows="10"></textarea>
+      <input type="submit" value="send message" class="btn" name="send">
+   </form>
+
+</section>
+
+
+<footer class="footer">
+
+<script src="js/script.js"></script>
+
+</body>
+</html>

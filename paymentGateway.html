@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Payment Gateway Form </title>
+    <link rel="stylesheet" href="stylePaymentGateway.css">
+	
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="css/style.css">
+   
+	 <!-- custom Tailwind css file link  -->
+   <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body>
+ <!--header section starts -->  
+<header class ="header min-h-screen bg-[url('images/bg_img.jpg')] bg-center bg-cover px-28 py-5">
+	
+	<nav class = "flex items-center">
+	<a href="home.html" class="logo"><i class="fa-solid fa-basket-shopping fa-bounce" style="color: #FFD43B;"></i> GROCERY MART </a>
+
+	<div class="icons">
+		<!--<div id ="menu-btn" class="fas fa-bars"></div> -->
+		<a href="home.html" class="logo"><div id ="search-btn" class="fas fa-search" ></div></a>
+		<a href="cart.html" class="logo"><div id ="cart-btn" class="fa-solid fa-cart-shopping fa-beat"></div></a>
+		<a href="login.html" class="logo"><div id ="login-btn" class="fas fa-user"></div></a>
+	</div>
+	</nav>
+
+    <div class="container">
+        <form action="">
+            <div class="row">
+                <div class="column">
+                    <h3 class="title">BILLING DETAILS</h3>
+                    <div class="input-box">
+                        <span>FULL NAME : *</span>
+                        <input type="text" placeholder="Raj Gupta">
+                    </div>
+					<div class="input-box">
+                        <span>CONTACT NUMBER : *</span>
+                        <input type="Mobile number" placeholder="99999 99999">
+                    </div>
+                    <div class="input-box">
+                        <span>EMAIL ID : *</span>
+                        <input type="email" placeholder="mail@example.com">
+                    </div>
+                    <div class="input-box">
+                        <span>ADDRESS : *</span>
+                        <input type="text" placeholder="FLOOR/HOUSE NUMBER - PLOT/FLAT NAME - STREET - LOCALITY">
+                    </div>
+                    <div class="input-box">
+                        <span>CITY : *</span>
+                        <input type="text" placeholder="Noida">
+                    </div>
+
+                    <div class="flex">
+                        <div class="input-box">
+                            <span>State :</span>
+                            <input type="text" placeholder="Uttar Pradesh">
+                        </div>
+                        <div class="input-box">
+                            <span>Zip Code :</span>
+                            <input type="number" placeholder="123 456">
+                        </div>
+                    </div>
+                </div>
+
+
+				<div class="row">
+                    <div class="checkout__order">
+                        <h2>ORDER DETAILS</h2><hr>
+                                <div class="checkout__order__products">
+								
+									<div class="mycontainer">
+										<div>Products
+										<ul>
+											<li>BRINJAL </li>
+											<li>POTATO </li>
+											<li>BANANAS</li>
+										</ul>
+										</div>
+										
+										<div>MRP
+										<ul>
+											<li>$75.99</li>
+											<li>$151.99</li>
+											<li>$53.99</li>
+										</ul>
+										</div>
+										<hr><hr><br>
+										<div><i>SUBTOTAL</i></div>
+										<span>$750.99</span><br>
+										<div><i>DISCOUNT</i></div>
+										<span>- $10.50</span><br>
+										<div><i>DELIVERY CHARGES</i></div>
+										<span>+ $1</span>
+										<br><br>
+										<hr><br>
+										<div>Total</div>
+										<span>$741.49</span>
+										<br><br>
+									</div>
+								</div>
+                               
+                                <div class="checkout__input__checkbox">
+                                    <label for="acc-or">
+                                        Create an account?
+                                        <input type="checkbox" id="acc-or">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </div>
+							<br><br>
+								<div class="input-box">
+									<p>Message for customized delivery</p>
+									<input type="text" placeholder="Notes about your order, e.g. special notes for delivery.">
+								</div>
+                            </div>
+                        </div>
+
+                <div class="column">
+                    <h3 class="title">PAYMENT MODE : </h3>
+                    <div class="input-box">
+                        <span>Cards Accepted :</span>
+                        <pre><img src="imgcards.png" alt=""> <i>and many more....</i></pre>
+						<a href="CardPaymentDetails.html" class="btn">Pay Via Card</a>
+                    </div>
+					
+					<div class="input-box">
+                        <span> NetBanking Platforms</span>
+                        <pre><i>PAYTM , GPAY , PHONEPE , AMAZONPAY and many more....</i></pre>
+						<a href="CardPaymentDetails.html" class="btn">Pay Via NetBanking</a>
+                    </div>
+					
+					<div class="checkout__input__checkbox">
+                        <label for="COD">
+                            CASH ON DELIVERY
+                            <input type="checkbox" id="COD">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>
+				<button type="submit" class="btn">PLACE ORDER </button>
+            </div>
+            
+        </form>
+    </div>
+
+</body>
+
+</html>
